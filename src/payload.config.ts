@@ -17,6 +17,7 @@ import Admins from "./collections/Admins";
 import Customers from "./collections/Customers";
 
 export default buildConfig({
+  serverURL: process.env.PAYLOAD_PUBLIC_BASE_DNS,
   admin: {
     user: "admins",
     bundler: webpackBundler(),
